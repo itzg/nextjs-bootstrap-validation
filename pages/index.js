@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {Button, Col, Container, Row} from 'react-bootstrap'
 import Link from "next/link";
 import LinkNewTab from "../components/linkNewTab";
+import SourceCodeLink from "../components/sourceCodeLink";
 
 export default function Home() {
   return (
@@ -33,7 +34,9 @@ export default function Home() {
                 </Col>
               </Row>
             </Container>
-
+          </p>
+          <p className="text-center">
+            <SourceCodeLink/>
           </p>
         </Container>
       </>

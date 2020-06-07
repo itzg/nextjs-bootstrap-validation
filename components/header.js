@@ -1,5 +1,6 @@
 import {Nav, Navbar} from "react-bootstrap";
 import Link from "next/link";
+import SourceCodeLink from "./sourceCodeLink";
 
 export default function Header() {
   return (
@@ -14,6 +15,13 @@ export default function Header() {
           <Link href="/bs-native-html5" passHref>
             <Nav.Link>Bootstrap Native HTML5</Nav.Link>
           </Link>
+        </Nav>
+        <Nav className="ml-auto">
+          <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+              <SourceCodeLink/>
+            </Navbar.Text>
+          </Navbar.Collapse>
         </Nav>
       </Navbar>
   )
