@@ -40,7 +40,10 @@ function ValidatedFormControl({
 }
 
 export default function BsNativeHtml5() {
-  const [values, setValues] = useState({favoriteNumber: 42});
+  const [values, setValues] = useState({
+    yourName: "",
+    favoriteNumber: 42
+  });
   const [submitted, setSubmitted] = useState({});
   const [validated, setValidated] = useState(false);
 

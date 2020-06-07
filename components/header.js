@@ -1,11 +1,14 @@
 import {Nav, Navbar} from "react-bootstrap";
 import Link from "next/link";
 import SourceCodeLink from "./sourceCodeLink";
+import {useRouter} from "next/router";
 
 export default function Header() {
+  const router = useRouter();
+
   return (
       <Navbar>
-        <Nav>
+        <Nav activeKey={router.pathname}>
           <Link href="/" passHref>
             <Nav.Link>Home</Nav.Link>
           </Link>
